@@ -1,0 +1,113 @@
+{
+    // === Линтер и форматтер Ruff ===
+    "editor.defaultFormatter": "charliermarsh.ruff", // Установить Ruff как форматтер
+    "editor.formatOnSave": true,    // Форматировать при сохранении
+    "editor.codeActionsOnSave": {   // Автодействия при сохранении
+        "source.organizeImports": "explicit",
+        "source.fixAll": "explicit"
+    },
+    "ruff.nativeServer": true,
+    
+    "ruff.fixAll": true,
+    "ruff.lineLength": 79,
+    "ruff.lint.ignore": ["ANN", "D"],
+
+    // === Python-настройки ===
+    "python.defaultInterpreterPath": "/usr/local/bin/python3", // Интерпретатор Python
+    "python.envFile": "",   // Переменные окружения
+    "python.createEnvironment.trigger": "off",  // Создание окружения отключено
+
+
+    // === Go-настройки ===
+    "go.goroot": "/opt/homebrew/Cellar/go/1.24.5/libexec",
+    "go.gopath": "/Users/alexm/go",
+    "go.toolsGopath": "/Users/alexm/go",
+    "go.useLanguageServer": true,
+    "go.formatTool": "goimports",
+    "[go]": {
+        "editor.defaultFormatter": "golang.go",
+        "editor.formatOnSave": true
+    },
+    "gopls": {
+        "usePlaceholders": true,
+        "staticcheck": true,
+        "analyses": {"ST1000": false},
+        "buildFlags": ["-tags=integration"]
+
+    }, // Размер шрифта в редакторе
+    "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace, MeslolGS NF", // Шрифт редактора
+    "workbench.preferredDarkColorTheme": "Monokai Pro", // Темная тема
+    "workbench.preferredLightColorTheme": "Monokai Light", // Светлая тема
+    "workbench.colorTheme": "Monokai Pro", // Перенос панели активности вниз
+    "workbench.startupEditor": "none",              // Не открывать стартовый редактор
+    "window.autoDetectColorScheme": true,           // Автоматическое определение темы
+
+    // === Git ===
+    "git.confirmSync": false, // Отключить подтверждение синхронизации
+
+    // === Файлы ===
+    "explorer.fileNesting.patterns": { // Шаблоны вложенности файлов
+        "*.ts": "${capture}.js",
+        "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+        "*.jsx": "${capture}.js",
+        "*.tsx": "${capture}.ts",
+        "tsconfig.json": "tsconfig.*.json",
+        "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
+        "*.sqlite": "${capture}.${extname}-*",
+        "*.db": "${capture}.${extname}-*",
+        "*.sqlite3": "${capture}.${extname}-*",
+        "*.db3": "${capture}.${extname}-*",
+        "*.sdb": "${capture}.${extname}-*",
+        "*.s3db": "${capture}.${extname}-*"
+    },
+    "files.associations": { // Ассоциации файлов
+        "*.jinja": "django-txt"
+    },
+
+    // === Терминал ===
+    "terminal.integrated.fontSize": 15,  // Размер шрифта терминала
+    "terminal.external.osxExec": "iTerm.app", // Внешний терминал для macOS
+    "terminal.explorerKind": "external",      // Терминал открывается внешним
+
+
+    // === Расширения и плагины ===
+    "chat.commandCenter.enabled": false,          // Отключение командного центра чата
+    "ruff.codeAction.disableRuleComment": {       // Отключение комментариев о правилах Ruff
+        "enable": false
+    },
+    "git.enableSmartCommit": true,
+    "database-client.autoSync": true,
+    "workbench.editor.empty.hint": "hidden",
+    "editor.fontLigatures": false,
+    "docker.extension.dockerEngineAvailabilityPrompt": false,
+    "chat.instructionsFilesLocations": {
+        ".github/instructions": true,
+        "/var/folders/0g/jpd2bnbj5rs2mh11y4wq4mzm0000gn/T/postman-collections-post-response.instructions.md": true,
+        "/var/folders/0g/jpd2bnbj5rs2mh11y4wq4mzm0000gn/T/postman-collections-pre-request.instructions.md": true,
+        "/var/folders/0g/jpd2bnbj5rs2mh11y4wq4mzm0000gn/T/postman-folder-post-response.instructions.md": true,
+        "/var/folders/0g/jpd2bnbj5rs2mh11y4wq4mzm0000gn/T/postman-folder-pre-request.instructions.md": true,
+        "/var/folders/0g/jpd2bnbj5rs2mh11y4wq4mzm0000gn/T/postman-http-request-post-response.instructions.md": true,
+        "/var/folders/0g/jpd2bnbj5rs2mh11y4wq4mzm0000gn/T/postman-http-request-pre-request.instructions.md": true
+    },
+    "editor.fontSize": 14,
+    "go.toolsManagement.autoUpdate": true,
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "dart.flutterSdkPath": "/Users/alexm/flutter",
+    "go.lintFlags": [
+        "ST1000"
+    ],
+    "workbench.iconTheme": "material-icon-theme",
+    // Activity bar
+    "workbench.activityBar.location": "hidden",
+    "workbench.sideBar.location": "right",
+    // Tabs
+    "workbench.editor.showIcons": true,
+    "workbench.editor.showTabs": "single",
+    "workbench.editor.labelFormat": "medium",
+    "breadcrumbs.enabled": false,
+    "custom-ui-style.external.imports": [
+        "file://${userHome}/dotfiles/vscode/plugin.js",
+    ],
+    "workbench.statusBar.visible": false,
+    "editor.minimap.enabled": false,
+}
