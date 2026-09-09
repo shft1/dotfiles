@@ -8,6 +8,15 @@
         "command": "workbench.action.navigateBack"
     },
     {
+        "key": "shift+cmd+c", // Абсолютный путь к файлу
+        "command": "copyFilePath"
+    },
+    {
+        "key": "shift+alt+cmd+c", // Относительный путь + номер строки
+        "command": "copyFilePathWithLineNumbers.copyRelativeReference",
+        "when": "editorTextFocus"
+    },
+    {
         "key": "cmd+]", // Вперёд по истории навигации
         "command": "workbench.action.navigateForward"
     },

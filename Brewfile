@@ -42,6 +42,10 @@ vscode "ms-python.python"
 # Python formatter and linter
 vscode "charliermarsh.ruff"
 
+# === VS Code: Utils ===
+
+# Copy relative/absolute file path with current line number
+vscode "avepha.copy-file-path-with-line-numbers"
 
 # === VS Code: UI ===
 
@@ -59,7 +63,6 @@ vscode "subframe7536.custom-ui-style"
 
 # Russian VS Code interface
 vscode "ms-ceintl.vscode-language-pack-ru"
-
 
 # === Go tools ===
 
