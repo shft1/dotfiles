@@ -43,8 +43,7 @@
     "workbench.editor.empty.hint": "hidden", // Скрыть подсказки пустого редактора
     "workbench.editor.showIcons": true, // Показывать иконки вкладок
     "workbench.editor.showTabs": "single", // Показывать одну вкладку
-    "workbench.editor.labelFormat": "medium", // Формат названия вкладки
-    "breadcrumbs.enabled": false, // Скрыть breadcrumbs
+    "workbench.editor.labelFormat": "medium", // Скрыть breadcrumbs
 
     "git.confirmSync": false, // Не спрашивать подтверждение Git Sync
     "git.enableSmartCommit": true, // Разрешить smart commit
@@ -57,5 +56,7 @@
 
     "custom-ui-style.external.imports": [
         "file://${userHome}/dotfiles/vscode/plugin.js" // Подключить кастомный UI script
-    ]
+    ],
+    "chat.titleBar.openInAgentsWindow.enabled": false,
+    "window.commandCenter": false
 }

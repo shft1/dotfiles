@@ -17,6 +17,20 @@
         "when": "textInputFocus && !editorReadonly"
     },
     {
+        "key": "cmd+1", // Открыть панель файлов
+        "command": "workbench.view.explorer",
+        "when": "!explorerViewletVisible"
+    },
+    {
+        "key": "cmd+1", // Закрыть панель файлов
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "explorerViewletVisible"
+    },
+    {
+        "key": "cmd+[IntlBackslash]", // Cmd + § — открыть / закрыть терминал
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
         "key": "cmd+b", // Go to Definition
         "command": "editor.action.revealDefinition",
         "when": "editorHasDefinitionProvider && editorTextFocus"
