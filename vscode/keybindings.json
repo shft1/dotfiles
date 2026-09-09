@@ -1,41 +1,51 @@
-// Поместите настраиваемые сочетания клавиш в этот файл, чтобы переопределить сочетания клавиш по умолчанию.
 [
     {
-        "key": "shift+cmd+o",
-        "command": "outline.focus"
+        "key": "cmd+e", // Открыть недавние файлы
+        "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup"
     },
     {
-        "key": "shift+cmd+g",
-        "command": "workbench.view.scm",
-        "when": "workbench.scm.active"
-    },
-    {
-        "key": "ctrl+shift+g",
-        "command": "-workbench.view.scm",
-        "when": "workbench.scm.active"
-    },
-    {
-        "key": "cmd+d",
-        "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
-        "when": "!activeEditorGroupEmpty"
-    },
-    {
-        "key": "ctrl+tab",
-        "command": "-workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
-        "when": "!activeEditorGroupEmpty"
-    },
-    {
-        "key": "ctrl+left",
+        "key": "cmd+[", // Назад по истории навигации
         "command": "workbench.action.navigateBack"
     },
     {
-        "key": "ctrl+right",
+        "key": "cmd+]", // Вперёд по истории навигации
         "command": "workbench.action.navigateForward"
     },
     {
-        "key": "alt+backspace",
+        "key": "cmd+backspace", // Удалить текущую строку
+        "command": "editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+b", // Go to Definition
+        "command": "editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus"
+    },
+    {
+        "key": "cmd+alt+b", // Go to Implementation
+        "command": "editor.action.goToImplementation",
+        "when": "editorHasImplementationProvider && editorTextFocus"
+    },
+    {
+        "key": "cmd+w", // Закрыть активный editor
+        "command": "workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "cmd+shift+[", // Свернуть текущий блок кода
+        "command": "editor.fold",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "cmd+shift+]", // Развернуть текущий блок кода
+        "command": "editor.unfold",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "alt+backspace", // Удалить предыдущее слово во встроенном терминале
         "command": "workbench.action.terminal.sendSequence",
-        "args": { "text": "\u0017" },
+        "args": {
+            "text": "\u0017"
+        },
         "when": "terminalFocus"
-  }
+    }
 ]

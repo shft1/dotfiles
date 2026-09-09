@@ -5,8 +5,6 @@ fi
 
 # Path to your Oh My Zsh installation
 export ZSH="$HOME/.oh-my-zsh"
-export PATH="$PATH:/Users/alexm/flutter/bin"
-export PATH="$PATH":"$HOME/.pub-cache/bin"
 
 export GOPATH=$(go env GOPATH)
 export PATH="$PATH:$GOPATH/bin"

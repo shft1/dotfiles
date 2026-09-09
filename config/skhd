@@ -7,7 +7,7 @@
 cmd + shift - return : open -b "com.googlecode.iterm2"
 
 # open vscode:
-ctrl - p : open -a 'GoLand'
+ctrl - p : open -a 'Visual Studio Code'
 
 # open browser:
 ctrl - o : open -a 'Arc'

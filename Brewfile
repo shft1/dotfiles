@@ -1,60 +1,82 @@
-tap "homebrew/services"
-# Cross-platform make
-brew "cmake"
-# Open source programming language to build simple/reliable/efficient software
+# === Third-party repositories ===
+
+# Formula for skhd
+tap "asmvik/formulae"
+
+
+# === Languages ===
+
+# Latest stable Go
 brew "go"
-# Open-source, cross-platform JavaScript runtime environment
-brew "node@22"
-# Object-relational database system
-brew "postgresql@14"
-# Object-relational database system
-brew "postgresql@15"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.10"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
-# Persistent key-value database, with built-in net interface
-brew "redis"
-# Open-source code editor
+
+# Latest stable Python
+brew "python"
+
+# Python package/project manager
+brew "uv"
+
+
+# === System tools ===
+
+# Global keyboard shortcuts for macOS
+brew "asmvik/formulae/skhd", trusted: true
+
+
+# === Applications ===
+
+# Visual Studio Code
 cask "visual-studio-code"
-vscode "ahmadalli.vscode-nginx-conf"
-vscode "ashley-chen-738.monokai-light-custom"
-vscode "batisteo.vscode-django"
-vscode "charliermarsh.ruff"
-vscode "cweijan.dbclient-jdbc"
-vscode "cweijan.vscode-database-client2"
-vscode "dart-code.dart-code"
-vscode "dart-code.flutter"
-vscode "docker.docker"
-vscode "github.github-vscode-theme"
+
+
+# === VS Code: Go ===
+
+# Official Go extension
 vscode "golang.go"
-vscode "humao.rest-client"
-vscode "mechatroner.rainbow-csv"
-vscode "monokai.theme-monokai-pro-vscode"
-vscode "ms-azuretools.vscode-containers"
-vscode "ms-azuretools.vscode-docker"
-vscode "ms-ceintl.vscode-language-pack-ru"
-vscode "ms-dotnettools.csdevkit"
-vscode "ms-dotnettools.csharp"
-vscode "ms-dotnettools.vscode-dotnet-runtime"
-vscode "ms-python.debugpy"
-vscode "ms-python.flake8"
-vscode "ms-python.isort"
+
+
+# === VS Code: Python ===
+
+# Official Python extension
 vscode "ms-python.python"
+
+# Python language server: autocomplete, types, navigation
 vscode "ms-python.vscode-pylance"
-vscode "ms-python.vscode-python-envs"
-vscode "njqdev.vscode-python-typehint"
+
+# Python debugger
+vscode "ms-python.debugpy"
+
+# Python formatter and linter
+vscode "charliermarsh.ruff"
+
+
+# === VS Code: UI ===
+
+# Dark theme
+vscode "monokai.theme-monokai-pro-vscode"
+
+# Light theme
+vscode "ashley-chen-738.monokai-light-custom"
+
+# File icons
 vscode "pkief.material-icon-theme"
-vscode "postman.postman-for-vscode"
-vscode "qwtel.sqlite-viewer"
-vscode "softwaredotcom.swdc-vscode"
-vscode "tamasfe.even-better-toml"
-vscode "visualstudioexptteam.intellicode-api-usage-examples"
-vscode "visualstudioexptteam.vscodeintellicode"
-vscode "visualstudioexptteam.vscodeintellicode-completions"
-vscode "wholroyd.jinja"
-vscode "zoxon.monokai-light"
+
+# Allows loading ~/dotfiles/vscode/plugin.js
+vscode "subframe7536.custom-ui-style"
+
+# Russian VS Code interface
+vscode "ms-ceintl.vscode-language-pack-ru"
+
+
+# === Go tools ===
+
+# Go debugger
 go "github.com/go-delve/delve/cmd/dlv"
+
+# Database migrations
 go "github.com/pressly/goose/v3/cmd/goose"
+
+# Go language server
 go "golang.org/x/tools/gopls"
+
+# Go static analyzer
 go "honnef.co/go/tools/cmd/staticcheck"
