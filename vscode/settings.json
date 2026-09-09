@@ -14,7 +14,10 @@
     "go.toolsManagement.autoUpdate": true, // Автообновление Go tools
     "gopls": {
         "usePlaceholders": true, // Подставлять placeholders в аргументы функций
-        "staticcheck": true // Включить staticcheck через gopls
+        "staticcheck": true, // Включить staticcheck
+        "analyses": {
+            "ST1000": false // Отключить требование package comment
+        }
     },
 
     "[python]": {
