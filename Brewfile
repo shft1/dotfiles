@@ -39,12 +39,6 @@ vscode "golang.go"
 # Official Python extension
 vscode "ms-python.python"
 
-# Python language server: autocomplete, types, navigation
-vscode "ms-python.vscode-pylance"
-
-# Python debugger
-vscode "ms-python.debugpy"
-
 # Python formatter and linter
 vscode "charliermarsh.ruff"
 
