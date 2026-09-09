@@ -3,11 +3,14 @@
 # Docs can be found here:
 # https://github.com/koekeishiya/skhd
 
+# open iterm2:
+cmd + shift - return : open -b "com.googlecode.iterm2"
+
 # open vscode:
-ctrl - p : open -a 'Visual Studio Code'
+ctrl - p : open -a 'GoLand'
 
 # open browser:
-ctrl - o : open -a 'Safari'
+ctrl - o : open -a 'Arc'
 
 # open telegram:
 ctrl - a : open -a 'Telegram'
