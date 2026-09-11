@@ -1,4 +1,47 @@
 [
+    // === Tool Windows ===
+    {
+        "key": "cmd+1", // Explorer — закрыть, если уже открыт
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "activeViewlet == 'workbench.view.explorer' && sideBarVisible"
+    },
+    {
+        "key": "cmd+1", // Explorer — открыть
+        "command": "workbench.view.explorer",
+        "when": "activeViewlet != 'workbench.view.explorer' || !sideBarVisible"
+    },
+
+    {
+        "key": "cmd+2", // DBCode — закрыть, если уже открыт
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "view.dbcode.connections.view.visible && sideBarVisible"
+    },
+    {
+        "key": "cmd+2", // DBCode — открыть
+        "command": "dbcode.connections.view.focus",
+        "when": "!view.dbcode.connections.view.visible || !sideBarVisible"
+    },
+
+    {
+        "key": "cmd+3", // Git Changes — закрыть, если уже открыт
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "activeViewlet == 'workbench.view.scm' && sideBarVisible"
+    },
+    {
+        "key": "cmd+3", // Git Changes — открыть
+        "command": "workbench.view.scm",
+        "when": "activeViewlet != 'workbench.view.scm' || !sideBarVisible"
+    },
+    {
+        "key": "cmd+4", // Git Graph — закрыть
+        "command": "workbench.action.closeActiveEditor",
+        "when": "activeWebviewPanelId == 'git-graph'"
+    },
+    {
+        "key": "cmd+4", // Git Graph — открыть
+        "command": "git-graph.view",
+        "when": "activeWebviewPanelId != 'git-graph'"
+    },
     {
         "key": "cmd+e", // Открыть недавние файлы
         "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup"

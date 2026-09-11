@@ -41,12 +41,17 @@
     "workbench.startupEditor": "none", // Не показывать стартовую страницу
     "workbench.secondarySideBar.defaultVisibility": "hidden", // Скрыть secondary sidebar
     "workbench.activityBar.location": "hidden", // Скрыть Activity Bar
-    "workbench.sideBar.location": "right", // Sidebar справа
-    "workbench.statusBar.visible": false, // Скрыть Status Bar
+    "workbench.sideBar.location": "right", // Скрыть Status Bar
     "workbench.editor.empty.hint": "hidden", // Скрыть подсказки пустого редактора
     "workbench.editor.showIcons": true, // Показывать иконки вкладок
     "workbench.editor.showTabs": "single", // Показывать одну вкладку
     "workbench.editor.labelFormat": "medium", // Скрыть breadcrumbs
+
+    // === Error Lens ===
+    "errorLens.delay": 1500, // Показывать новые ошибки только через 1.5 секунды
+    "errorLens.delayMode": "new", // Исправленные ошибки убирать сразу, новые показывать с задержкой
+    "errorLens.messageBackgroundMode": "none", // Не закрашивать красным всю строку
+    "errorLens.fontSize": "-1px", // Текст ошибки чуть меньше основного кода
 
     "git.confirmSync": false, // Не спрашивать подтверждение Git Sync
     "git.enableSmartCommit": true, // Разрешить smart commit
@@ -60,6 +65,62 @@
     "custom-ui-style.external.imports": [
         "file://${userHome}/dotfiles/vscode/plugin.js" // Подключить кастомный UI script
     ],
+
     "chat.titleBar.openInAgentsWindow.enabled": false,
-    "window.commandCenter": false
+    "yaml.schemas": {
+        "file:///Users/asmalkov/.avito/json_schemas/schemas/actions.toml.json": [
+            "**/actions.toml"
+        ],
+        "file:///Users/asmalkov/.avito/json_schemas/schemas/alert.yaml.json": [
+            "alert.yaml"
+        ],
+        "file:///Users/asmalkov/.avito/json_schemas/schemas/app.toml.json": [
+            "app.toml"
+        ],
+        "file:///Users/asmalkov/.avito/json_schemas/schemas/auth.toml.json": [
+            "auth.toml"
+        ],
+        "file:///Users/asmalkov/.avito/json_schemas/schemas/autocanary.yaml.json": [
+            "autocanary.yaml"
+        ],
+        "file:///Users/asmalkov/.avito/json_schemas/schemas/backoffice.yaml.json": [
+            "backoffice.yaml"
+        ],
+        "file:///Users/asmalkov/.avito/json_schemas/schemas/batch.yaml.json": [
+            "**/*.batch.yaml",
+            "*.batch.yaml"
+        ],
+        "file:///Users/asmalkov/.avito/json_schemas/schemas/boilerplate.yaml.json": [
+            "**/boilerplate.yaml",
+            ".boilerplates/*.yaml"
+        ],
+        "file:///Users/asmalkov/.avito/json_schemas/schemas/codegen.toml.json": [
+            "**/codegen.toml"
+        ],
+        "file:///Users/asmalkov/.avito/json_schemas/schemas/databases.toml.json": [
+            "databases.toml"
+        ],
+        "file:///Users/asmalkov/.avito/json_schemas/schemas/libs.toml.json": [
+            "libs.toml"
+        ],
+        "file:///Users/asmalkov/.avito/json_schemas/schemas/nfr.toml.json": [
+            "nfr.toml"
+        ],
+        "file:///Users/asmalkov/.avito/json_schemas/schemas/updates.toml.json": [
+            "updates.toml"
+        ]
+    },
+    "gitlens.graph.details.location": "auto",
+    "window.commandCenter": false,
+    "workbench.layoutControl.enabled": false,
+    "workbench.statusBar.visible": false,
+    "dbcode.connections": [
+        {
+            "connectionId": "O325lJWMKv9LE-KlTDJVt",
+            "connectionType": "socket",
+            "name": "Пример - SQLite",
+            "driver": "sqlite",
+            "socket": "sakila"
+        }
+    ]
 }

@@ -64,6 +64,27 @@ vscode "subframe7536.custom-ui-style"
 # Russian VS Code interface
 vscode "ms-ceintl.vscode-language-pack-ru"
 
+# Показывает ошибки и warnings прямо в строках кода
+vscode "usernamehw.errorlens"
+
+# Поддержка .editorconfig проекта
+vscode "editorconfig.editorconfig"
+
+# Расширенная Git history / blame
+vscode "eamodio.gitlens"
+
+# Visual Git commit/branch graph
+vscode "mhutchie.git-graph"
+
+# Быстрое переключение между локальными проектами
+vscode "alefragnani.project-manager"
+
+# Database client for PostgreSQL, Redis, MongoDB, ClickHouse, etc.
+vscode "DBCode.dbcode"
+
+# Run HTTP requests directly from .http/.rest files
+vscode "humao.rest-client"
+
 # === Go tools ===
 
 # Go debugger
